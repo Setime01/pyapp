@@ -1,10 +1,13 @@
-score = int(input('What is your score? '))
+name = input("What is your name? ")
+score = float(input('What is your score? '))
 
-if score > 80:
+if 80 <= score <= 100:
     print("Excellent")
-elif score > 60:
+elif 60 <= score <= 79.9:
     print("Very Good")
-elif score > 40:
+elif 40 <= score <= 59.9:
     print("Good")
-elif score > 0:
+elif 0 <= score <= 39.9:
     print("Fair")
+else:
+    print("invalid number")
